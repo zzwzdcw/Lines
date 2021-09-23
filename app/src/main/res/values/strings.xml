@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lines</string>
+    <string name="start">添加头图</string>
+    <string name="add">添加台词图</string>
+    <string name="mod">设置台词范围</string>
+    <string name="save">保存</string>
 </resources>
