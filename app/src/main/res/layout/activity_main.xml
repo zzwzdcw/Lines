@@ -18,30 +18,29 @@
             android:id="@+id/start"
             android:layout_width="match_parent"
             android:layout_height="55dp"
+            android:onClick="setStart"
             android:text="@string/start" />
-
-        <Button
-            android:id="@+id/add"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:text="@string/add" />
 
         <Button
             android:id="@+id/mod"
             android:layout_width="match_parent"
             android:layout_height="55dp"
+            android:onClick="setMod"
             android:text="@string/mod" />
+
+        <Button
+            android:id="@+id/adds"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:onClick="setAdds"
+
+            android:text="@string/add" />
 
         <ImageView
             android:id="@+id/imageview"
             android:layout_width="match_parent"
-            android:layout_height="508dp"
+            android:layout_height="562dp"
             tools:srcCompat="@tools:sample/avatars" />
 
-        <Button
-            android:id="@+id/save"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:text="@string/save" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
