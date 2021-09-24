@@ -70,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void setStart(View view) {
         //在这里跳转到手机系统相册里面
+        paths.clear();
+        modPaths.clear();
+        modBitmap.clear();
         Intent intent = new Intent(
                 Intent.ACTION_PICK,
                 android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -167,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
                         //第一句台词添加完成
                         for (int i = 0 ; i <modBitmap.size();i++){
                             top+=lineHeight;
-                            canvas.drawBitmap((modBitmap.get(0)), 0, top, null);
+                            canvas.drawBitmap((modBitmap.get(i)), 0, top, null);
                             Log.v("debug", "添加第"+i+2+"句台词进入");
                         }
                         //全部完成
