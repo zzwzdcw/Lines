@@ -94,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
                 .setActivityTitle("台词范围裁剪")
                 .setCropShape(CropImageView.CropShape.RECTANGLE)  //选择矩形裁剪
                 .setFixAspectRatio(false)
+                .setMinCropResultSize(30,30)
+                .setMinCropWindowSize(30,30)
                 .start(MainActivity.this);
     }
 
